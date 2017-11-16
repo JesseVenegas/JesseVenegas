@@ -472,6 +472,9 @@ a {
 .large-hero {
     border-bottom: 10px solid #2f5572;
     position: relative;
+    
+    
+   
 
     
 }
@@ -481,7 +484,7 @@ a {
     }
 
 .large-hero__text-content {
-        padding-top: 88px;
+        padding-top: 150px;
         position:absolute;
         top: 50%;
         -webkit-transform: translateY(-50%);
@@ -503,7 +506,7 @@ a {
         font-weight: 300;
         color:#f0f8ff;
         margin: 0;
-        font-size: 2.4rem;
+        font-size: 1.4rem;
         
         
     }
@@ -520,7 +523,7 @@ a {
 .large-hero__subtitle {
         font-weight: 300;
         color:#f0f8ff;
-        font-size: 1.5rem;
+        font-size: 1.0rem;
          margin: 0;
     }
 
@@ -536,15 +539,17 @@ a {
         font-size: 1.1rem;
         font-weight: 100;
         text-shadow: 2px 2px 0 rgba(0, 0, 0, .1);
+        margin-top: 0;
+    
     }
 
 @media (min-width: 530px) {
 
-.large-hero {
-        font-size: 1.875rem
-
+.large-hero__description {
+        font-size: 1.875rem;
+        margin-top:
     
-}
+    }
     }
 
 .btn {
@@ -1157,7 +1162,7 @@ by Gulp.  Instead edit gulp/templates/sprite*/
 .site-header__logo {
         position: absolute;
         top: 0;
-        left: 50%;
+        left: 25%;
         -webkit-transform: translateX(-50%) scale(.8);
                 transform: translateX(-50%) scale(.8);
         -webkit-transition: -webkit-transform .3s ease-out;
@@ -1167,7 +1172,7 @@ by Gulp.  Instead edit gulp/templates/sprite*/
         -webkit-transform-origin: 50% 0;
                 transform-origin: 50% 0;
         background-color: #2f5572;
-        padding: 25px 36px;
+        padding: 20px 45px;
     }
 
 @media (min-width: 800px) {

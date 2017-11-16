@@ -7,7 +7,7 @@
     }
     
     &__text-content {
-        padding-top: 88px;
+        padding-top: 150px;
         position:absolute;
         top: 50%;
         transform: translateY(-50%);
@@ -25,7 +25,7 @@
         font-weight: 300;
         color:#f0f8ff;
         margin: 0;
-        font-size: 2.4rem;
+        font-size: 1.4rem;
         
         @mixin atSmall {
             font-size: 4.8rem;
@@ -37,7 +37,7 @@
     &__subtitle {
         font-weight: 300;
         color:#f0f8ff;
-        font-size: 1.5rem;
+        font-size: 1.0rem;
          margin: 0;
         
         @mixin atSmall {
@@ -50,11 +50,17 @@
         font-size: 1.1rem;
         font-weight: 100;
         text-shadow: 2px 2px 0 rgba(0, 0, 0, .1);
+        margin-top: 0;
+    
+         @mixin atSmall {
+        font-size: 1.875rem;
+        margin-top: 
     }
     
-    @mixin atSmall {
-        font-size: 1.875rem;
     }
+    
+    
+   
 
     
 }
