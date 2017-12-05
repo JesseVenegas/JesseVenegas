@@ -27,7 +27,7 @@
     
     &__logo {
         position: absolute;
-        top: 0;
+        top: auto;
         left: 25%;
         transform: translateX(-50%) scale(.8);
         transition: transform .3s ease-out;
@@ -46,7 +46,11 @@
     }
     
     &__logo__graphic {
-        text-indent: -9999%;
+        text-indent: 0;
+        color: white;
+        font-weight: 500;
+        font-size: 1.7em;
+        font-family: roboto, sans-serif;
     }
     
     &__menu-icon {

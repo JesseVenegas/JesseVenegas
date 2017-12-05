@@ -21,7 +21,7 @@
   <header class="site-header">
     <div class="wrapper">
         <div class="site-header__logo">
-            <div class="site-header__logo__graphic icon icon--clear-view-escapes">True Texas Realty</div>
+            <div class="site-header__logo__graphic">True Texas Realty</div>
         </div>
         
         <div class="site-header__menu-icon">
@@ -50,7 +50,7 @@
             <h1 class="large-hero__title">Kathy Ercanbrack</h1>
             <h2 class="large-hero__subtitle">Real Estate Agent</h2>
             <p class="large-hero__description">Let me help you find a home.</p>
-            <p><a href="#" class="btn btn--orange btn--large open-modal">Featured Homes</a></p>
+            <p><a href="#our-beginning" class="btn btn--orange btn--large">Featured Homes</a></p>
         </div>
     </div>
   </div>
@@ -189,7 +189,42 @@
       <div class="modal__inner">
           <h2 class="section-title section-title--blue section-title--less-margin"><span class="icon icon--mail section-title__icon"></span>Get in <strong>Touch</strong></h2>
       <div class="wrapper wrapper--narrow">
-      <p class="modal__description">We will have an online form in place soon.  Until then connect with us on any of the platforms below!</p>
+      
+      <div class="container">  
+  <form id="contact" method="post">
+    <h4>Send me a message... Ask me anything!</h4>
+    <fieldset>
+      <input placeholder="Your name" name="name" type="text" tabindex="1" required autofocus>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Email Address" name="_replyto" type="email" tabindex="2" required>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Phone Number" name="phone-number" type="tel" tabindex="3" required>
+    </fieldset>
+    <fieldset>
+      <input type="hidden" name="_subject" value="Website contact" />
+    </fieldset>
+    <fieldset>
+      <textarea placeholder="Type your Message Here...." name="message" tabindex="5" required></textarea>
+    </fieldset>
+    <fieldset>
+      <input  type="text" name="_gotcha" style="display:none" />
+    </fieldset>
+    <fieldset>
+      <button type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+    </fieldset>
+  </form>
+  <script>
+    var contact =  document.getElementById('contact');
+    contact.setAttribute('action', '//formspree.io/' + 'jessev20' + '@' + 'gmail' + '.' + 'com');
+</script>
+ 
+  
+</div>
+
+      
+      <p class="modal__description">You can also connect with me on one of the platforms below!</p>
       </div>
       <div class="social-icons">
           <a href="#" class="social-icons__icon"><span class="icon icon--facebook"></span></a>
